@@ -1,0 +1,238 @@
+:root {
+  --black: black;
+  --blue: #5c8bc4;
+  --pink: #f7cacd;
+  --white: white;
+  --yellow: #faecbe;
+  --bg-first: linear-gradient(var(--blue), var(--pink));
+}
+
+/* Landing Page */
+/* Navbar */
+.navbar .nav-link {
+  color: var(--black);
+}
+
+.navbar .nav-link:hover {
+  color: var(--blue);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--blue);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+/* Home */
+#home {
+  background: var(--bg-first);
+  padding: 14rem 0rem 0rem 0rem;
+}
+
+#home h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+/* Welcome */
+#welcome {
+  background: var(--white);
+  padding: 10rem 0rem 0rem 0rem;
+}
+
+#form .btn,
+#find-detail .btn {
+  background: var(--bg-first);
+  border: var(--white);
+}
+
+#welcome h1,
+#reach h1,
+#about-us h1,
+#our-history h1,
+h2,
+#find h1 {
+  color: var(--blue);
+}
+
+#welcome p,
+#island p,
+#food p,
+#find-detail p {
+  text-align: justify;
+}
+
+/* Island */
+#island {
+  background: var(--pink);
+  padding: 0rem;
+}
+
+/* Food */
+#food {
+  background: var(--white);
+  padding: 0rem;
+}
+
+.svg {
+  margin: 5rem 0rem;
+}
+
+/* Reach */
+#reach {
+  padding: 0rem 10rem;
+  margin-top: -100px;
+}
+
+#reach .card {
+  width: 100%;
+}
+
+#reach img {
+  width: 100px;
+  margin: auto;
+}
+
+.found {
+  padding: 2.5rem 0rem 2rem 0rem;
+}
+
+.input {
+  padding: 3rem 0rem 2rem 0rem;
+}
+
+.input .card-text {
+  margin-top: 3rem;
+}
+
+/* About Us Page */
+#about-us {
+  padding: 5rem 10rem;
+}
+
+#about-us .card {
+  width: 100%;
+}
+
+#about-us img {
+  width: 350px;
+  margin: auto;
+}
+
+#our-history .december-hide,
+.january-hide {
+  opacity: 0;
+  cursor: default;
+}
+
+/* Find Place Page */
+#find {
+  padding: 5rem 0rem;
+}
+
+#form {
+  padding: 0rem 0rem 5rem 0rem;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 991px) {
+  /* Navbar */
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.1);
+  }
+
+  /* About Us Page */
+  #about-us .card {
+    width: 100%;
+  }
+
+  #about-us img {
+    width: 250px;
+  }
+
+  #our-history img {
+    width: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Landing Page */
+  /* Welcome */
+  #welcome h1 {
+    text-align: center;
+  }
+
+  #home img,
+  #island img,
+  #welcome img,
+  #food img {
+    display: flex;
+    margin: auto;
+    width: 350px;
+  }
+
+  /* Reach */
+  #reach {
+    padding: 0rem 0rem;
+  }
+
+  #reach .card {
+    width: 50%;
+  }
+
+  #reach img {
+    width: 50px;
+  }
+
+  /* About Us Page */
+  #about-us {
+    padding: 5rem 0rem;
+  }
+
+  #about-us .card {
+    width: 100%;
+  }
+
+  #about-us img {
+    width: 250px;
+  }
+
+  #our-history img {
+    width: 30px;
+  }
+
+  #our-history .col-md-12 {
+    padding: 0rem;
+  }
+
+  #our-history .december h2,
+  .january h2,
+  .february h2 {
+    font-size: 17px;
+  }
+
+  #our-history .december p,
+  .january p,
+  .february p {
+    font-size: 14px;
+  }
+
+  /* Find Place Page */
+  #form img {
+    width: 250px;
+  }
+}

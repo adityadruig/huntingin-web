@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HuntingIn</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg bg-white fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/logo.png" alt="Logo" width="200" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto fw-bold gap-3">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="find-place.html">Find Place</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact-us.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Home start -->
+    <section id="home">
+      <div class="container">
+        <div class="row text-start text-white">
+          <div class="col-md-6">
+            <h1>Let's Explore Hidden Places!</h1>
+            <p class="my-4">Plan your vacation on the most beatiful places in Indonesia</p>
+          </div>
+
+          <div class="col-md-6 d-flex justify-content-end">
+            <img src="assets/img/home-3.png" alt="Home" width="350" />
+          </div>
+        </div>
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,192L48,160C96,128,192,64,288,58.7C384,53,480,107,576,154.7C672,203,768,245,864,234.7C960,224,1056,160,1152,117.3C1248,75,1344,53,1392,42.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Home end -->
+
+    <!-- Find start -->
+    <section id="find">
+      <div class="container">
+        <div class="row text-center justify-content-center">
+          <div class="col-md-6">
+            <h1 class="mb-3">Reach The Hidden Gem!</h1>
+            <p class="lh-lg">
+              Discover the hidden beauty of Indonesia through our unique adventure. <br />
+              Explore beautiful hidden destinations and experience their untold <br />
+              charm. With us, plan your trip to a hidden paradise in Indonesia and <br />
+              create unforgettable memories in every corner.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Find end -->
+
+    <!-- Form start -->
+    <section id="form">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col border border-danger-subtle">
+            <img src="assets/img/form.png" alt="Form" width="450" />
+            <p class="mt-4"><b>Please</b> fill out the form below so we can find specific destination.</p>
+            <hr class="m-auto" width="50%" />
+            <p class="my-5">
+              The result you will receive maybe still limited due to the data we have. <br />
+              However, the potential for development exists.
+            </p>
+
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <form action="find-place-detail.html" method="get">
+                  <div class="mb-3">
+                    <select class="form-select" id="region" name="city" required>
+                      <option value="" selected disabled>Select Region</option>
+                      <option value="Jakarta">Jakarta</option>
+                      <option value="Yogyakarta">Yogyakarta</option>
+                      <option value="Bandung">Bandung</option>
+                      <option value="Semarang">Semarang</option>
+                      <option value="Surabaya">Surabaya</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <input type="text" class="form-control" id="budget" name="price" placeholder="Budget (Max) ex *5000*" required />
+                  </div>
+                  <div class="mb-3">
+                    <select class="form-select" id="category" name="category" required>
+                      <option value="" selected disabled>Select Category</option>
+                      <option value="Bahari">Bahari</option>
+                      <option value="Budaya">Budaya</option>
+                      <option value="Cagar Alam">Cagar Alam</option>
+                      <option value="Pusat Perbelanjaan">Pusat Perbelanjaan</option>
+                      <option value="Taman Hiburan">Taman Hiburan</option>
+                      <option value="Tempat Ibadah">Tempat Ibadah</option>
+                    </select>
+                  </div>
+                  <button type="submit" class="btn btn-primary rounded-pill fw-bold mt-3 mb-5">PROCEED</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Form end -->
+
+    <!-- Footer start -->
+    <footer id="footer" class="bg-dark pt-5 mt-5">
+      <div class="container">
+        <div class="row justify-content-between text-secondary">
+          <div class="col-md-2">
+            <img src="assets/img/logo.png" alt="Logo" width="150" />
+            <p>Is a sophisticated website designed to assist users in discovering hidden gems throughout Indonesia</p>
+          </div>
+
+          <div class="col-md-2">
+            <h5 class="text-white my-4">Links</h5>
+            <a class="text-decoration-none text-secondary" href="index.html">
+              <h6>Home</h6>
+            </a>
+            <a class="text-decoration-none text-secondary" href="about-us.html">
+              <h6>About Us</h6>
+            </a>
+            <a class="text-decoration-none text-secondary" href="find-place.html">
+              <h6>Find Place</h6>
+            </a>
+            <a class="text-decoration-none text-secondary" href="contact-us.html">
+              <h6>Contact Us</h6>
+            </a>
+          </div>
+
+          <div class="col-md-2">
+            <h5 class="text-white my-4">Contact Us</h5>
+            <p>huntingin@gmail.com</p>
+          </div>
+
+          <div class="col-md-2">
+            <h5 class="text-white my-4">Social Media</h5>
+            <img class="me-3" src="assets/img/google.png" alt="Google" width="50" />
+            <img src="assets/img/facebook.png" alt="Facebook" width="50" /><br />
+            <img class="mt-3" src="assets/img/twitter.png" alt="Twitter" width="65" />
+            <img class="mt-3" src="assets/img/instagram.png" alt="Instagram" width="50" />
+          </div>
+
+          <div class="mt-5">
+            <p>© 2024 Created by HuntingIn</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
